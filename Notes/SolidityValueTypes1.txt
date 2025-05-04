@@ -1,0 +1,41 @@
+
+ Solidity Value Types 
+       In Solidity, value types are the basic data types that store data directly in memory, not by reference. When you assign a value type variable to another, it copies the value, not the reference.
+
+
+
+Unsigned Integer (uint)
+      An unsigned integer is a whole number that can only be positive or zero. It can’t hold negative numbers.
+
+      The default size for uint is uint256, meaning it can store very large numbers (from 0 to 2^256 − 1). 
+
+      Example:
+       uint age = 25;  // The age cannot be negative
+        uint balance = 1000;  // A user's balance cannot be negative
+Integer (int)
+     An integer can hold both positive and negative numbers. It’s used to represent values that can go below zero.
+
+     The default size for int is int256, which allows storing negative and positive numbers within the range of −2^255 to 2^255 − 1.
+    
+    Example:
+      int balance = -50;  // The balance can be negative, indicating debt
+      int temperature = 22;  // A temperature that can be negative (e.g., -5°C)
+
+Boolean (bool)
+     A boolean is a simple type that can only have two values: true or false.
+
+     It’s used to store binary decisions, like whether something is active, completed, or valid. Internally, it’s a single bit of storage, which makes it very efficient.
+
+     Example:
+        bool isActive = true;  // This could mean a user is active
+        bool isCompleted = false;  // This could mean a task hasn't been completed yet
+
+
+Enum
+    An enum (short for "enumeration") is a custom type that allows to define a set of named values. It’s like creating a list of options where each option has a number behind it.
+
+    Enums are internally stored as integers, starting at 0. The first value is 0, the second is 1, and so on. 
+
+    Eample:
+      enum Status { Pending, Shipped, Delivered }
+      Status orderStatus = Status.Pending;  // The order is still pending
