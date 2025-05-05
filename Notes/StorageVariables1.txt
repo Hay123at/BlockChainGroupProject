@@ -1,0 +1,16 @@
+Storage Variables
+   storage variables refer to variables that are declared at the contract level (outside functions). These variables are permanently stored on the blockchain.
+
+
+Storage Slots in Solidity
+   -Contract-Scope Variables Use Storage Slots
+   -Any variable declared at the contract level (outside functions) uses a dedicated storage slot.
+  -constant and immutable variables do not use a storage slot—they’re embedded directly into the bytecode.
+  -Each Slot Is 32 Bytes Wide
+  -Each storage slot is exactly 32 bytes (256 bits).
+  -Solidity uses 256-bit words because the EVM (Ethereum Virtual Machine) is built around 32-byte operations.
+   Example:
+    uint8 a = 1; // uses part of a 32-byte slot
+  -Solidity Stores Variables Contiguously
+  Variables are stored in slot 0, slot 1, slot 2, ... in the order they are declared.
+  -If variables are small (like uint8, bool, etc.), Solidity tries to pack them into the same slot if possible.
