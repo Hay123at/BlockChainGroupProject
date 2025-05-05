@@ -38,7 +38,7 @@ contract Contract1 {
 // 2.	Declare the variables a and b as int8. One of the values must be positive, the other must be negative.
 // 3.	Declare the variable difference as a int16 which is the absolute difference between a and b.
 
-contract Contract {
+contract Contract2 {
      int8 public a = 30;
     int8 public b = -10;
      int16 public difference = a >= b ? int16(a - b) : int16(b - a);
@@ -51,7 +51,7 @@ contract Contract {
 // 2.	Create a public string storage variable msg2 which stores a string literal that requires over 32 bytes to store.
 
 
-contract Contract {
+contract Contract4 {
     bytes32 public msg1 = "Hello World";
     string public msg2 = "This is a longer message that exceeds thirty-two bytes.";
 }
@@ -63,7 +63,7 @@ contract Contract {
 // Take the values and store them in food1, food2, food3, and food4
 
 
-contract Contract {
+contract Contract5 {
     enum Foods { Apple, Pizza, Bagel, Banana }
 
 	Foods public food1 = Foods.Apple ;
