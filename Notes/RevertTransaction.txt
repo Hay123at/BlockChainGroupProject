@@ -1,0 +1,8 @@
+Reverting Transactions:
+    In Solidity, a transaction reverts when an error occurs, 
+    undoing all state changes and returning gas not used for execution. 
+    This ensures no partial updates happen.
+
+Message Call Revert in Solidity
+    message calls can fail, and when they do, they can revert.
+    A revert means that the entire transaction is rolled back, including all state changes, and an error is returned.
