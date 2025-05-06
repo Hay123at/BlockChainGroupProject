@@ -1,0 +1,4 @@
+ 
+Functions  
+      function is a block of reusable code that performs a specific task, such as transferring tokens, reading data from the blockchain, or modifying contract storage.
+
