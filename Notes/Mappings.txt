@@ -1,0 +1,4 @@
+Mapping
+     mapping is a reference type similar to a hash table or dictionary in other programming languages. It allows you to store and retrieve values based on a key. 
+     Mappings are mostly used to associate a unique key with a value.
+
