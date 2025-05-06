@@ -1,0 +1,10 @@
+Inheritance
+Inheritance in Solidity allows smart contracts to reuse and extend functionality from other contracts, enabling modular and efficient code. A child contract inherits functions (except private), state variables, modifiers, events, errors, structs, and enums from its parent. Key features include:
+
+is Keyword: Establishes inheritance (e.g., contract Child is Parent).
+
+virtual & override: Parent functions marked virtual can be overridden in child contracts using override.
+
+super: Calls the parent contract’s version of an overridden function.
+
+Modularity: Common logic (e.g., onlyOwner access control) can be abstracted into a base contract (like Ownable) and reused across multiple contracts via imports (import "./Ownable.sol";).
