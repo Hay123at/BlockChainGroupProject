@@ -1,0 +1,13 @@
+Arrays:
+ Arrays in Solidity store multiple values of the same type, either with fixed or dynamic size, and allow indexed access to elements.
+Reference Types: 
+ Complex data types (like arrays, structs, mappings) that store references to data rather than the data itself.
+
+Storage: 
+ Permanent data location on the blockchain; variables stored here persist between function calls.
+
+Calldata: 
+ Temporary, read-only data location for function inputs; used in external calls.
+
+Memory: 
+ Temporary data location used during function execution; data is erased after the function ends.

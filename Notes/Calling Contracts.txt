@@ -1,0 +1,3 @@
+Calling Contracts:
+   In Solidity, one contract can interact with another by calling its functions using
+   the contract’s address and interface. This allows modular and reusable code across contracts.

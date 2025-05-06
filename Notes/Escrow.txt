@@ -1,0 +1,3 @@
+Escrow:
+    An escrow is a smart contract that holds funds securely until predefined conditions are met, 
+    ensuring trust between parties in a transaction.
