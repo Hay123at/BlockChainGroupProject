@@ -1,0 +1,25 @@
+Message Calls
+     message call refers to how contracts interact with other contracts or externally owned accounts (EOAs). 
+ 
+A message call occurs when:
+    A contract calls a function of another contract.
+    A transaction is sent to a contract (from another contract or an EOA).
+
+It includes:
+    Sender address (msg.sender)
+    Data (function name + arguments)
+    Ether value (msg.value)
+    Gas limit
+
+Message Call Breakdown
+   When a contract receives a message call, Solidity exposes these:
+     msg.sender → who called the function
+     msg.value → how much Ether was sent
+     msg.data → calldata (function + arguments)
+     msg.sig → first 4 bytes of msg.data (function selector)
+
+How Do EOAs and Contracts Call Other Contracts?
+   Externally Owned Accounts (EOAs) and Smart Contracts can call or interact with other smart contracts
+      -They use the `address` of the contract they want to communicate with
+      -This is a data type in solidity that is 20 bytes long
+      -The `msg.sender` from the previous slide is an address
