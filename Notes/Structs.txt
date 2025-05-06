@@ -1,0 +1,4 @@
+
+Struct
+    A struct  is a custom data type that allows you to group multiple variables under one name. It's similar to a "record" or "object" in other programming languages.
+
